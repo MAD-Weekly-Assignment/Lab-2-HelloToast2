@@ -7,6 +7,7 @@
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="89dp">
 
+
     <Button
         android:id="@+id/button_toast"
         android:layout_width="wrap_content"
@@ -16,8 +17,8 @@
         android:text="@string/button_label_toast"
         android:textColor="@android:color/white"
         android:textSize="60sp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_count"
@@ -28,9 +29,8 @@
         android:text="@string/button_label_count"
         android:textColor="@android:color/white"
         android:textSize="60sp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="1651dp" />
-
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_toast"
+        app:layout_constraintStart_toEndOf="@+id/button_toast" />
 
     <TextView
         android:id="@+id/show_count"
