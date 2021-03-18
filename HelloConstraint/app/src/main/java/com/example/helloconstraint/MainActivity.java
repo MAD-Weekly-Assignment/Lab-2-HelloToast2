@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         if (mShowCount != null){
             mShowCount.setText(String.format(Locale.ENGLISH, "%d", mCount));
         }
-        mResetButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        mResetButton.setBackgroundColor(Color.CYAN);
         mResetButton.setClickable(true);
 
         switch (mCount % 2){
@@ -54,6 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
         view.setClickable(false);
         view.setBackgroundColor(Color.GRAY);
-        mCountButton.setBackgroundColor(getResources().getColor(R.color.gray));
+        mCountButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
     }
 }
